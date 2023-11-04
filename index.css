@@ -6,7 +6,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #FFF7ED;
+  background-color: #575757;
   font-family: "Inter", sans-serif;
 }
 
@@ -98,7 +98,7 @@ footer {
 
 /*** HOME PAGE ***/
 .home-container {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("./assets/images/home-hero.jpeg") no-repeat center center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("./images/home-hero.jpeg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -118,7 +118,7 @@ footer {
   line-height: 24px;
 }
 
-.home-container a {
+.to-vans {
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -445,4 +445,40 @@ i[class*='van-type-'] {
 .host-van-detail-image {
   height: 100px;
   border-radius: 5px;
+}
+
+@media (min-width: 800px) {
+  main {
+    padding: 0 5em;
+  }
+
+  header {
+    padding: 0 2em;
+  }
+
+  header .site-logo {
+    font-weight: 900;
+    font-size: 2rem;
+  }
+
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .to-vans {
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+    width: 30%;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .1s ease-in-out;
+  }
 }
