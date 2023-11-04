@@ -6,7 +6,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #575757;
+  background-color: #ffffff;
   font-family: "Inter", sans-serif;
 }
 
@@ -57,7 +57,7 @@ main {
 
 footer {
   background-color: #161616;
-  color: #AAAAAA;
+  color: #ffffff;
   height: 74px;
   display: flex;
   flex-shrink: 0;
@@ -96,7 +96,7 @@ footer {
   transform: translate(1px, 1px);
 }
 
-/*** HOME PAGE ***/
+/* HOME */
 .home-container {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("./images/home-hero.jpeg") no-repeat center center;
   -webkit-background-size: cover;
@@ -122,12 +122,12 @@ footer {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  background-color: #FF8C38;
+  background-color: #ffffff;
   border: none;
   width: 100%;
   margin-top: 27px;
   padding-block: .75rem;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: 700;
   border-radius: 5px;
   cursor: pointer;
@@ -139,7 +139,7 @@ footer {
 }
 
 
-/*** ABOUT PAGE ***/
+/* ABOUT */
 .about-hero-image {
   max-width: 100%;
 }
@@ -159,7 +159,7 @@ footer {
 }
 
 .about-page-cta {
-  background-color: #FFCC8D;
+  background-color: #dcdcdc;
   color: #161616;
   padding-inline: 32px;
   padding-bottom: 32px;
@@ -472,13 +472,62 @@ i[class*='van-type-'] {
     padding: 0 auto;
     text-align: center;
     text-decoration: none;
-    background-color: #ffffff;
     width: 30%;
-    border: none;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
+  }
+
+  .van-detail-container {
+    padding: 1em;
+    max-width: 500px;
+  }
+
+  .about-hero-image {
+    margin: auto;
+    width: 600px;
     border-radius: 5px;
-    cursor: pointer;
-    transition: transform .1s ease-in-out;
+  }
+
+  .about-page-cta {
+    text-align: end;
+  }
+
+  .about-page-cta h2 {
+    margin-right: 4em;
+    padding-block: 37px;
+  }
+
+  .about-page-cta .link-button {
+    margin-right: 6em;
+    background-color: #161616;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .about-page-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-page-content {
+    margin: 1em 0;
+    text-align: center;
+    background-color: rgba(225, 117, 84, 0.126);
+    border-radius: 4px;
+  }
+
+  .about-page-content p {
+    padding: 0 10em;
+  }
+
+  .van-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 57px;
+  }
+
+  .van-tile {
+    max-width: 400px;
   }
 }
