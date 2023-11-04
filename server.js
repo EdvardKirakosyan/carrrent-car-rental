@@ -1,6 +1,4 @@
 import { createServer, Model } from "miragejs"
-import imgUrl from "./assets/images/chevrolet-camaro-1969.png"
-document.getElementById("hero-img").src = imgUrl
 
 createServer({
   models: {
@@ -13,7 +11,7 @@ createServer({
       name: "Chevrolet Camaro (1969)",
       price: 60,
       description: "description",
-      imageUrl: imgUrl,
+      imageUrl: "/assets/images/chevrolet-camaro-1969.png",
       type: "retro",
       hostId: "123",
     })
