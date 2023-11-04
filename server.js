@@ -1,5 +1,5 @@
 import { createServer, Model } from "miragejs"
-import imgUrl from "./assets/images/aston-martin-db9-gt-2016-fr.jpg"
+import imgUrl from "./assets/images/chevrolet-camaro-1969.png"
 document.getElementById("hero-img").src = imgUrl
 
 createServer({
