@@ -7,25 +7,25 @@ export default function About() {
     <div className="about-page-container">
       <img src={bgImg} className="about-hero-image" />
       <div className="about-page-content">
-        <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
+        <h1>What is the most exciting car you have ever driven?</h1>
         <p>
-          Our mission is to enliven your road trip with the perfect travel van
-          rental. Our vans are recertified before each trip to ensure your
-          travel plans can go off without a hitch. (Hitch costs extra 😉)
+          Our mission is to revitalize your driving experience with the perfect
+          car rental. Our cars are checked before each ride to ensure your
+          safety.
         </p>
         <p>
-          Our team is full of vanlife enthusiasts who know firsthand the magic
-          of touring the world on 4 wheels.
+          Our team is full of car enthusiasts who know firsthand the magic of
+          driving.
         </p>
       </div>
       <div className="about-page-cta">
         <h2>
           Your destination is waiting.
           <br />
-          Your van is ready.
+          Your car is ready.
         </h2>
         <Link className="link-button" to="/vans">
-          Explore our vans
+          Explore our cars.
         </Link>
       </div>
     </div>

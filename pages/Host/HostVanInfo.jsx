@@ -15,9 +15,6 @@ export default function HostVanInfo() {
       <h4>
         Description: <span>{currentVan.description}</span>
       </h4>
-      <h4>
-        Visibility: <span>Public</span>
-      </h4>
     </section>
   )
 }

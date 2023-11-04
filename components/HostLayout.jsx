@@ -30,7 +30,7 @@ export default function HostLayout() {
           to="vans"
           style={({ isActive }) => (isActive ? activeStyles : null)}
         >
-          Vans
+          Cars
         </NavLink>
 
         <NavLink

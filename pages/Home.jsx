@@ -4,12 +4,9 @@ import { Link } from "react-router-dom"
 export default function Home() {
   return (
     <div className="home-container">
-      <h1>You got the travel plans, we got the travel vans.</h1>
-      <p>
-        Add adventure to your life by joining the #vanlife movement. Rent the
-        perfect van to make your perfect road trip.
-      </p>
-      <Link to="vans">Find your van</Link>
+      <h1>You got the place to drive, we got the vehicles.</h1>
+      <p>Add new experiences to your life by joining the caRRRent.</p>
+      <Link to="vans">Find your car</Link>
     </div>
   )
 }

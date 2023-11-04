@@ -35,7 +35,6 @@ header {
 header .site-logo {
   color: black;
   margin-right: auto;
-  text-transform: uppercase;
   font-weight: 900;
   font-size: 25px;
 }
@@ -232,18 +231,18 @@ footer {
   color: #FFEAD0;
 }
 
-.van-type.simple:hover,
-.van-type.simple.selected {
+.van-type.sport:hover,
+.van-type.sport.selected {
   background-color: #E17654;
 }
 
-.van-type.rugged:hover,
-.van-type.rugged.selected {
+.van-type.retro:hover,
+.van-type.retro.selected {
   background-color: #115E59;
 }
 
-.van-type.luxury:hover,
-.van-type.luxury.selected {
+.van-type.lux:hover,
+.van-type.lux.selected {
   background-color: #161616;
 }
 

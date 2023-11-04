@@ -28,7 +28,7 @@ export default function HostVans() {
 
   return (
     <section>
-      <h1 className="host-vans-title">Your listed vans</h1>
+      <h1 className="host-vans-title">Your listed cars</h1>
       <div className="host-vans-list">
         {vans.length > 0 ? (
           <section>{hostVansEls}</section>

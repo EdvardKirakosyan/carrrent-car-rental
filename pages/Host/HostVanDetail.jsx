@@ -23,7 +23,7 @@ export default function HostVanDetail() {
   return (
     <section>
       <Link to=".." relative="path" className="back-button">
-        &larr; <span>Back to all vans</span>
+        &larr; <span>Back to all cars</span>
       </Link>
 
       <div className="host-van-detail-layout-container">
