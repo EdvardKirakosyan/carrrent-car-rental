@@ -85,5 +85,12 @@ createServer({
       const id = request.params.id
       return schema.vans.findBy({ id, hostId: "123" })
     })
+
+    this.get("/assets/images", (schema, request) => {
+      return new Response("", {
+        status: 404,
+        headers: { "content-type": "text/plain" },
+      })
+    })
   },
 })
