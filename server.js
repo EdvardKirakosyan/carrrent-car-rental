@@ -92,6 +92,5 @@ createServer({
         headers: { "content-type": "text/plain" },
       })
     })
-    this.passthrough("/assets/**")
   },
 })
