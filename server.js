@@ -38,7 +38,7 @@ createServer({
       name: "Aston Martin DB9 GT (2016)",
       price: 65,
       description: "description",
-      imageUrl: "/assets/images/Aston Martin DB9 GT (2016) FR.png",
+      imageUrl: "/assets/images/aston-martin-db9-gt-2016-fr.png",
       type: "lux",
       hostId: "789",
     })
