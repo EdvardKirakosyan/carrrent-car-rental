@@ -6,6 +6,7 @@ createServer({
   },
 
   // /images/chevrolet-camaro-1969.png
+  // <a href="https://ibb.co/jL8VP5Q"><img src="https://i.ibb.co/551Yg9S/box-logo.png" alt="box-logo" border="0"></a><br /><a target='_blank' href='https://nonprofitlight.com/co/highlands-ranch/mountain-vista-gold-crown-basketball'>gold crown basketball</a><br />
 
   seeds(server) {
     server.create("van", {
@@ -13,7 +14,7 @@ createServer({
       name: "Chevrolet Camaro (1969)",
       price: 60,
       description: "description",
-      imageUrl: "https://ibb.co/jL8VP5Q",
+      imageUrl: "https://i.ibb.co/551Yg9S/box-logo.png",
       type: "retro",
       hostId: "123",
     })
