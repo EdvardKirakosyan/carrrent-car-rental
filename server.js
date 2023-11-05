@@ -5,13 +5,15 @@ createServer({
     vans: Model,
   },
 
+  // /images/chevrolet-camaro-1969.png
+
   seeds(server) {
     server.create("van", {
       id: "1",
       name: "Chevrolet Camaro (1969)",
       price: 60,
       description: "description",
-      imageUrl: "/images/chevrolet-camaro-1969.png",
+      imageUrl: "https://ibb.co/jL8VP5Q",
       type: "retro",
       hostId: "123",
     })
