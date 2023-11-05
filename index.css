@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #e5e5e5;
   font-family: "Inter", sans-serif;
 }
 
@@ -308,7 +308,7 @@ i[class*='van-type-'] {
 }
 
 .van-detail .link-button {
-  background-color: #FF8C38;
+  background-color: #232323;
   color: white;
   font-size: 1.125rem;
 }
@@ -337,6 +337,7 @@ i[class*='van-type-'] {
 
 .host-vans-list {
   padding-inline: 26px;
+
 }
 
 .host-vans-title {
@@ -353,7 +354,7 @@ i[class*='van-type-'] {
 }
 
 .host-van-single>img {
-  height: 70px;
+  width: 130px;
   border-radius: 5px;
   margin-right: 17px;
 }
@@ -486,7 +487,7 @@ i[class*='van-type-'] {
   .about-hero-image {
     margin: auto;
     width: 600px;
-    border-radius: 5px;
+    border-radius: 60px;
   }
 
   .about-page-cta {
@@ -511,7 +512,7 @@ i[class*='van-type-'] {
   }
 
   .about-page-content {
-    margin: 1em 0;
+    margin: 2em;
     text-align: center;
     background-color: rgba(225, 117, 84, 0.126);
     border-radius: 4px;
@@ -539,5 +540,9 @@ i[class*='van-type-'] {
     flex-direction: row;
     gap: 1em;
     align-items: center;
+  }
+
+  .host-van-single>img {
+    width: 300px;
   }
 }
