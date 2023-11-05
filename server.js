@@ -5,8 +5,7 @@ createServer({
     vans: Model,
   },
 
-  // /images/chevrolet-camaro-1969.png
-  // <a href="https://ibb.co/jL8VP5Q"><img src="https://i.ibb.co/551Yg9S/box-logo.png" alt="box-logo" border="0"></a><br /><a target='_blank' href='https://nonprofitlight.com/co/highlands-ranch/mountain-vista-gold-crown-basketball'>gold crown basketball</a><br />
+  //<a href="https://ibb.co/rFcz7S0"><img src="https://i.ibb.co/6r1Tnxw/aston-martin-db9-gt-2016-fr.jpg" alt="aston-martin-db9-gt-2016-fr" border="0" /></a>
 
   seeds(server) {
     server.create("van", {
@@ -14,7 +13,7 @@ createServer({
       name: "Chevrolet Camaro (1969)",
       price: 60,
       description: "description",
-      imageUrl: "https://i.ibb.co/551Yg9S/box-logo.png",
+      imageUrl: "https://i.ibb.co/QksVg7K/chevrolet-camaro-1969.png",
       type: "retro",
       hostId: "123",
     })
@@ -23,7 +22,7 @@ createServer({
       name: "Audi RS4 (2022)",
       price: 80,
       description: "description",
-      imageUrl: "/images/audi-rs4-2022-my.png",
+      imageUrl: "https://i.ibb.co/QJwcgJQ/audi-rs4-2022-my.png",
       type: "sport",
       hostId: "123",
     })
@@ -32,7 +31,7 @@ createServer({
       name: "Rolls Royce Cullinan (2018)",
       price: 100,
       description: "description",
-      imageUrl: "/images/rolls-royce-cullinan-2018-int.png",
+      imageUrl: "https://i.ibb.co/ky8HWnj/rolls-royce-cullinan-2018-int.png",
       type: "lux",
       hostId: "456",
     })
@@ -41,7 +40,7 @@ createServer({
       name: "Aston Martin DB9 GT (2016)",
       price: 65,
       description: "description",
-      imageUrl: "/images/aston-martin-db9-gt-2016-fr.jpg",
+      imageUrl: "https://i.ibb.co/6r1Tnxw/aston-martin-db9-gt-2016-fr.jpg",
       type: "lux",
       hostId: "789",
     })
@@ -50,7 +49,7 @@ createServer({
       name: "Porsche 911 Turbo (2020)",
       price: 120,
       description: "description",
-      imageUrl: "/images/porsche-911-turbo-2020-int.png",
+      imageUrl: "https://i.ibb.co/WnhRZ8k/porsche-911-turbo-2020-int.png",
       type: "sport",
       hostId: "789",
     })
@@ -59,7 +58,7 @@ createServer({
       name: "Jaguar E Pace (2017)",
       price: 70,
       description: "description",
-      imageUrl: "/images/jaguar-e-pace-2017-fr.png",
+      imageUrl: "https://i.ibb.co/BLY88pJ/jaguar-e-pace-2017-fr.png",
       type: "lux",
       hostId: "123",
     })
