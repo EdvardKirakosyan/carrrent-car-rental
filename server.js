@@ -5,8 +5,6 @@ createServer({
     vans: Model,
   },
 
-  //<a href="https://ibb.co/rFcz7S0"><img src="https://i.ibb.co/6r1Tnxw/aston-martin-db9-gt-2016-fr.jpg" alt="aston-martin-db9-gt-2016-fr" border="0" /></a>
-
   seeds(server) {
     server.create("van", {
       id: "1",

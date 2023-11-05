@@ -375,7 +375,9 @@ i[class*='van-type-'] {
 
 .host-van-detail {
   display: flex;
-  align-items: center;
+  gap: 1em;
+  flex-direction: column;
+  align-items: start;
 }
 
 .host-van-detail>img {
@@ -529,5 +531,12 @@ i[class*='van-type-'] {
 
   .van-tile {
     max-width: 400px;
+  }
+
+  .host-van-detail {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
   }
 }
