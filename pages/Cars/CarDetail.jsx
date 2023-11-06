@@ -1,9 +1,11 @@
 import React from "react"
-import { useParams, Link } from "react-router-dom"
+import { useParams, Link, useLocation } from "react-router-dom"
 
 export default function CarDetail() {
   const params = useParams()
   const [car, setCar] = React.useState(null)
+
+  const location = useLocation()
 
   React.useEffect(() => {
     fetch(`/api/cars/${params.id}`)
@@ -13,8 +15,15 @@ export default function CarDetail() {
 
   return (
     <div className="car-detail-container">
-      <Link to=".." relative="path" className="back-button">
-        &larr; <span>Back to all cars</span>
+      <Link
+        to={`..${location.state?.search}`}
+        relative="path"
+        className="back-button"
+      >
+        &larr;{" "}
+        <span>{`Back to ${
+          location.state.type === null ? "all" : location.state.type
+        } cars`}</span>
       </Link>
       {car ? (
         <div className="car-detail">

@@ -40,6 +40,10 @@ header .site-logo {
   font-size: 1.2rem;
 }
 
+header .site-logo:hover {
+  text-decoration: none;
+}
+
 header a {
   text-decoration: none;
   color: #4D4D4D;
@@ -133,6 +137,7 @@ footer {
   border-radius: 5px;
   cursor: pointer;
   transition: transform .1s ease-in-out;
+  box-shadow: 5px 5px 10px .2px rgba(0, 0, 0, 0.609);
 }
 
 .home-container a:hover {
@@ -215,7 +220,7 @@ footer {
   font-weight: 500;
   border: none;
   border-radius: 5px;
-  background-color: #000000;
+  background-color: #727272;
   color: #ffffff;
   transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -234,30 +239,30 @@ footer {
 
 .car-type.sport:hover,
 .car-type.sport.selected {
-  background-color: #3c3c3c;
+  background-color: #000000;
+  box-shadow: 5px 5px 10px .2px rgba(0, 0, 0, 0.609);
+
 }
 
 .car-type.retro:hover,
 .car-type.retro.selected {
-  background-color: #3c3c3c;
+  background-color: #000000;
+  box-shadow: 5px 5px 10px .2px rgba(0, 0, 0, 0.609);
 }
 
 .car-type.lux:hover,
 .car-type.lux.selected {
-  background-color: #3c3c3c;
+  background-color: #000000;
+  box-shadow: 5px 5px 10px .2px rgba(0, 0, 0, 0.609);
 }
 
 .car-type.clear-filters {
-  margin-left: -20px;
-  height: 34px;
-  padding: 6px 26px;
   font-style: normal;
-  font-weight: 500;
-  border: none;
+  font-weight: bold;
+  border: .3px dashed black;
   border-radius: 5px;
-  text-decoration: underline;
   background-color: transparent;
-  color: #4D4D4D;
+  color: #000000;
 }
 
 i[class*='car-type-'] {
@@ -351,6 +356,9 @@ i[class*='car-type-'] {
   margin-bottom: 15px;
   padding-block: 18px;
   padding-left: 24px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px .2px rgba(0, 0, 0, 0.609);
+
 }
 
 .host-car-single>img {
@@ -451,6 +459,20 @@ i[class*='car-type-'] {
   border-radius: 5px;
 }
 
+/* 404 - page */
+.page-not-found-link {
+  display: inline-block;
+  text-decoration: none;
+  margin: .5em;
+  font-size: 1em;
+  background-color: #000000;
+  padding: 1em 2em;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px .2px rgba(0, 0, 0, 0.609);
+  color: white;
+}
+
+/* media queries */
 @media (min-width: 800px) {
   main {
     padding: 0 5em;
