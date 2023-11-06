@@ -27,7 +27,7 @@ export default function Header() {
           ABOUT
         </NavLink>
         <NavLink
-          to="/vans"
+          to="/cars"
           style={({ isActive }) => (isActive ? activeStyles : null)}
         >
           CARS

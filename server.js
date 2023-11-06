@@ -2,11 +2,11 @@ import { createServer, Model } from "miragejs"
 
 createServer({
   models: {
-    vans: Model,
+    cars: Model,
   },
 
   seeds(server) {
-    server.create("van", {
+    server.create("car", {
       id: "1",
       name: "Chevrolet Camaro (1969)",
       price: 60,
@@ -15,7 +15,7 @@ createServer({
       type: "retro",
       hostId: "123",
     })
-    server.create("van", {
+    server.create("car", {
       id: "2",
       name: "Audi RS4 (2022)",
       price: 80,
@@ -24,7 +24,7 @@ createServer({
       type: "sport",
       hostId: "123",
     })
-    server.create("van", {
+    server.create("car", {
       id: "3",
       name: "Rolls Royce Cullinan (2018)",
       price: 100,
@@ -33,7 +33,7 @@ createServer({
       type: "lux",
       hostId: "456",
     })
-    server.create("van", {
+    server.create("car", {
       id: "4",
       name: "Aston Martin DB9 GT (2016)",
       price: 65,
@@ -42,7 +42,7 @@ createServer({
       type: "lux",
       hostId: "789",
     })
-    server.create("van", {
+    server.create("car", {
       id: "5",
       name: "Porsche 911 Turbo (2020)",
       price: 120,
@@ -51,7 +51,7 @@ createServer({
       type: "sport",
       hostId: "789",
     })
-    server.create("van", {
+    server.create("car", {
       id: "6",
       name: "Jaguar E Pace (2017)",
       price: 70,
@@ -66,24 +66,24 @@ createServer({
     this.namespace = "api"
     this.logging = false
 
-    this.get("/vans", (schema, request) => {
-      return schema.vans.all()
+    this.get("/cars", (schema, request) => {
+      return schema.cars.all()
     })
 
-    this.get("/vans/:id", (schema, request) => {
+    this.get("/cars/:id", (schema, request) => {
       const id = request.params.id
-      return schema.vans.find(id)
+      return schema.cars.find(id)
     })
 
-    this.get("/host/vans", (schema, request) => {
+    this.get("/host/cars", (schema, request) => {
       // Hard-code the hostId for now
-      return schema.vans.where({ hostId: "123" })
+      return schema.cars.where({ hostId: "123" })
     })
 
-    this.get("/host/vans/:id", (schema, request) => {
+    this.get("/host/cars/:id", (schema, request) => {
       // Hard-code the hostId for now
       const id = request.params.id
-      return schema.vans.findBy({ id, hostId: "123" })
+      return schema.cars.findBy({ id, hostId: "123" })
     })
   },
 })

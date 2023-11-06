@@ -6,7 +6,7 @@ export default function Home() {
     <div className="home-container">
       <h1>You got the place to drive, we got the vehicles.</h1>
       <p>Add new experiences to your life by joining the caRRRent.</p>
-      <Link className="to-vans" to="vans">
+      <Link className="to-cars" to="cars">
         Find your car
       </Link>
     </div>

@@ -1,9 +1,9 @@
 import React from "react"
 import { useParams, Link, NavLink, Outlet } from "react-router-dom"
 
-export default function HostVanDetail() {
+export default function HostCarDetail() {
   const { id } = useParams()
-  const [currentVan, setCurrentVan] = React.useState(null)
+  const [currentCar, setCurrentCar] = React.useState(null)
 
   const activeStyles = {
     fontWeight: "bold",
@@ -12,12 +12,12 @@ export default function HostVanDetail() {
   }
 
   React.useEffect(() => {
-    fetch(`/api/host/vans/${id}`)
+    fetch(`/api/host/cars/${id}`)
       .then((res) => res.json())
-      .then((data) => setCurrentVan(data.vans))
+      .then((data) => setCurrentCar(data.cars))
   }, [])
 
-  if (!currentVan) {
+  if (!currentCar) {
     return <h1>Loading...</h1>
   }
   return (
@@ -26,19 +26,19 @@ export default function HostVanDetail() {
         &larr; <span>Back to all cars</span>
       </Link>
 
-      <div className="host-van-detail-layout-container">
-        <div className="host-van-detail">
-          <img src={currentVan.imageUrl} />
-          <div className="host-van-detail-info-text">
-            <i className={`van-type van-type-${currentVan.type}`}>
-              {currentVan.type}
+      <div className="host-car-detail-layout-container">
+        <div className="host-car-detail">
+          <img src={currentCar.imageUrl} />
+          <div className="host-car-detail-info-text">
+            <i className={`car-type car-type-${currentCar.type}`}>
+              {currentCar.type}
             </i>
-            <h3>{currentVan.name}</h3>
-            <h4>${currentVan.price}/day</h4>
+            <h3>{currentCar.name}</h3>
+            <h4>${currentCar.price}/day</h4>
           </div>
         </div>
 
-        <nav className="host-van-detail-nav">
+        <nav className="host-car-detail-nav">
           <NavLink
             to="."
             end
@@ -59,7 +59,7 @@ export default function HostVanDetail() {
             Photos
           </NavLink>
         </nav>
-        <Outlet context={{ currentVan }} />
+        <Outlet context={{ currentCar }} />
       </div>
     </section>
   )
