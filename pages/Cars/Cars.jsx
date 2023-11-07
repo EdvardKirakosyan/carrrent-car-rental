@@ -1,16 +1,22 @@
 import React from "react"
 import { Link, useSearchParams } from "react-router-dom"
+import fetchingData from "../../api"
 
 export default function Vans() {
   const [cars, setCars] = React.useState([])
   const [searchParams, setSearchParams] = useSearchParams()
+  const [load, setLoad] = React.useState(false)
 
   const typeFilter = searchParams.get("type")
 
   React.useEffect(() => {
-    fetch("/api/cars")
-      .then((res) => res.json())
-      .then((data) => setCars(data.cars))
+    const loadFn = async () => {
+      setLoad(true)
+      const data = await fetchingData()
+      setCars(data)
+      setLoad(false)
+    }
+    loadFn()
   }, [])
 
   const filtered = typeFilter
@@ -45,6 +51,10 @@ export default function Vans() {
       }
       return prev
     })
+  }
+
+  if (load) {
+    return <h1>Loading...</h1>
   }
 
   return (

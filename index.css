@@ -213,6 +213,12 @@ footer {
   cursor: pointer;
 }
 
+.car-list-filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2em;
+}
+
 .car-type {
   height: 34px;
   padding: 6px 26px;
@@ -460,11 +466,20 @@ i[class*='car-type-'] {
 }
 
 /* 404 - page */
+.page-not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3em;
+  color: red;
+  font-size: 1.3rem;
+}
+
 .page-not-found-link {
   display: inline-block;
   text-decoration: none;
-  margin: .5em;
-  font-size: 1em;
+  margin: 1em;
   background-color: #000000;
   padding: 1em 2em;
   border-radius: 10px;
