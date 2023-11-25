@@ -15,7 +15,7 @@ export default function About() {
           <br />
           Your car is ready.
         </h2>
-        <Link className="link-button" to="/vans">
+        <Link className="link-button" to="/cars">
           Explore our cars
         </Link>
       </div>
