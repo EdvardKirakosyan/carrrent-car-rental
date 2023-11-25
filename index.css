@@ -11,6 +11,11 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+::selection {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
