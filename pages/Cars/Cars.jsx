@@ -2,7 +2,7 @@ import React from "react"
 import { Link, useSearchParams } from "react-router-dom"
 import fetchingData from "../../api"
 
-export default function Vans() {
+export default function Cars() {
   const [cars, setCars] = React.useState([])
   const [searchParams, setSearchParams] = useSearchParams()
   const [load, setLoad] = React.useState(false)
