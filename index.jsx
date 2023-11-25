@@ -6,7 +6,6 @@ import About from "./pages/About"
 import Cars from "./pages/Cars/Cars"
 import CarDetail from "./pages/Cars/CarDetail"
 import Dashboard from "./pages/Host/Dashboard"
-import Income from "./pages/Host/Income"
 import Reviews from "./pages/Host/Reviews"
 import HostCars from "./pages/Host/HostCars"
 import HostCarDetail from "./pages/Host/HostCarDetail"
@@ -31,7 +30,6 @@ function App() {
 
           <Route path="host" element={<HostLayout />}>
             <Route index element={<Dashboard />} />
-            <Route path="income" element={<Income />} />
             <Route path="reviews" element={<Reviews />} />
             <Route path="cars" element={<HostCars />} />
             <Route path="cars/:id" element={<HostCarDetail />}>
