@@ -402,7 +402,7 @@ i[class*='car-type-'] {
 }
 
 .host-car-detail>img {
-  height: 160px;
+  width: 100%;
   border-radius: 5px;
   margin-right: 20px;
 }
