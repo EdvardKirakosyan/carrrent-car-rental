@@ -362,6 +362,7 @@ i[class*='car-type-'] {
 
 .host-car-single {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   background-color: white;
   margin-bottom: 15px;
