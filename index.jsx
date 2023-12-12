@@ -5,7 +5,6 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Cars from "./pages/Cars/Cars"
 import CarDetail from "./pages/Cars/CarDetail"
-import Dashboard from "./pages/Host/Dashboard"
 import Reviews from "./pages/Host/Reviews"
 import HostCars from "./pages/Host/HostCars"
 import HostCarDetail from "./pages/Host/HostCarDetail"
@@ -29,9 +28,8 @@ function App() {
           <Route path="cars/:id" element={<CarDetail />} />
 
           <Route path="host" element={<HostLayout />}>
-            <Route index element={<Dashboard />} />
+            <Route index element={<HostCars />} />
             <Route path="reviews" element={<Reviews />} />
-            <Route path="cars" element={<HostCars />} />
             <Route path="cars/:id" element={<HostCarDetail />}>
               <Route index element={<HostCarInfo />} />
               <Route path="pricing" element={<HostCarPricing />} />

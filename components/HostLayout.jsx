@@ -11,16 +11,17 @@ export default function HostLayout() {
   return (
     <>
       <nav className="host-nav">
-        <NavLink
+        {/* <NavLink
           to="."
           end
           style={({ isActive }) => (isActive ? activeStyles : null)}
         >
           Dashboard
-        </NavLink>
+        </NavLink> */}
 
         <NavLink
-          to="cars"
+          to="."
+          end
           style={({ isActive }) => (isActive ? activeStyles : null)}
         >
           Cars

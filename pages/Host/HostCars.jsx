@@ -11,11 +11,7 @@ export default function HostCars() {
   }, [])
 
   const hostCarsEls = cars.map((car) => (
-    <Link
-      to={`/host/cars/${car.id}`}
-      key={car.id}
-      className="host-car-link-wrapper"
-    >
+    <Link to={car.id} key={car.id} className="host-car-link-wrapper">
       <div className="host-car-single" key={car.id}>
         <img src={car.imageUrl} alt={`Photo of ${car.name}`} />
         <div className="host-car-info">
