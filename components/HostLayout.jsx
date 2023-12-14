@@ -11,14 +11,6 @@ export default function HostLayout() {
   return (
     <>
       <nav className="host-nav">
-        {/* <NavLink
-          to="."
-          end
-          style={({ isActive }) => (isActive ? activeStyles : null)}
-        >
-          Dashboard
-        </NavLink> */}
-
         <NavLink
           to="."
           end
